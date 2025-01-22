@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# NFL Hall of Fame Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a web application that allows users to explore detailed information about significant players in NFL history. Users can easily access each player's career statistics and biography.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Player List**: A list of all players inducted into the Hall of Fame.
+- **Detailed Player Information**: Access to career statistics and biographical details of each player.
+- **Filtering and Search**: Search players by name or position.
+- **Responsive Design**: Optimized for both mobile and desktop devices.
 
-### `npm start`
+## Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Demo GIF](./public/assets/Demo.gif)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- **React.js**: Used to build the user interface of the application.
+- **React-Bootstrap**: Helps in quickly creating UI components with Bootstrap styles.
+- **JavaScript**: The core programming language used for application functionality.
+- **HTML/CSS**: Used for page structure and styling.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Structure
 
-### `npm run build`
+```plaintext
+┣ 📂.github
+┃ ┗ 📂workflows
+┃   ┗ 📜deploy.yml         # Automatic deployment workflow
+┣ 📂public
+┃ ┣ 📂assets               # Images and static files
+┃ ┃ ┣ 📜background-image.jpg
+┃ ┃ ┗ 📜logo.png
+┃ ┣ 📜favicon.ico
+┃ ┗ 📜index.html           # Entry point for the application
+┣ 📂src
+┃ ┣ 📂components           # React components
+┃ ┃ ┣ 📂cards
+┃ ┃ ┃ ┣ 📜CardsContainer.jsx
+┃ ┃ ┃ ┗ 📜MyCards.jsx
+┃ ┃ ┗ 📂header
+┃ ┃   ┗ 📜MyHeader.jsx
+┃ ┣ 📂helpers              # Helper functions and data
+┃ ┃ ┗ 📜data.js
+┃ ┣ 📜App.css              # Main styling file
+┃ ┣ 📜App.js               # Main entry point of the application
+┃ ┣ 📜index.css            # Global styles
+┃ ┗ 📜index.js             # React rendering logic
+┣ 📜.gitignore             # Git ignore rules
+┣ 📜LICENSE                # Licensing information
+┣ 📜package.json           # Dependency and project details
+┣ 📜pnpm-lock.yaml         # pnpm lock file
+┗ 📜README.md              # Project documentation
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the Repository**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+git clone https://github.com/celal-dzelal/nfl-hall-of-fame.git
 
-### `npm run eject`
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. **Install the Required Dependencies**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+pnpm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. **Start the Application**
 
-## Learn More
+```
+pnpm start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Contributing
 
-### Code Splitting
+- Feel free to open a pull request if you'd like to contribute to the project. Suggestions and feedback are welcome.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### License
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- This project is licensed under the MIT License.
